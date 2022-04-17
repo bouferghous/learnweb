@@ -1,0 +1,33 @@
+adresse : C:\Users\argho\AppData\Roaming\Code\User\snippets\css.json
+
+
+
+"absolute-centered": {
+		"prefix": "abs-center",
+		"body": [
+			"position: absolute;",
+			"top: 50%;",
+			"left: 50%;",
+			"transform: translate(-50%, -50%);"
+		],
+		"description": "Perfectly center an absolute positionned element."
+	},
+    "flex-center": {
+        "prefix": "flex-center",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;"
+		],
+		"description": "Perfectly center with flexbox."
+    },
+
+    "basic-circle": {
+        "prefix": "basic-circle",
+		"body": [
+			"width: 100px;",
+			"height: 100px;",
+			"border-radius: 50%;"
+		],
+		"description": "Create a basic circle."
+    },

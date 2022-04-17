@@ -1,0 +1,142 @@
+        /*Start Variables*/
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --main-color-text: #fefcfbcb;
+}
+        /*End Variables*/
+        /*Start Global Rules*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Small 768 and + */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*Medium 992 and + */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*Large 1200 and + */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+        /*End Global Rules*/
+
+/*Start Header*/
+header {
+  max-height: 100vh;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(100% - 30px);
+  background-color: var(--main-color-text);
+  bottom: 0;
+  left: 15;
+}
+header .logo img {
+  height: 40px;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+ display: flex;  
+}
+nav ul li a {
+     color: var(--main-color-text);
+     display: block;
+     text-decoration: none;
+     padding: 40px 20px 15px; 
+     font-size: 14px;
+     transition: 0.3s;
+     position: relative;
+     z-index: 2;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  height: 121%;
+color: var(--main-color);
+border-bottom: 1px solid var(--main-color);
+}
+/* nav .form {
+  color: var(--main-color-text);
+   padding-left: 20px;
+   border-left: 2px solid;
+   line-height: 20px;
+   margin-top: 10px;
+   margin-left: 20px;
+} */
+nav .form {
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-left: 1px solid var(--main-color-text);
+  position: relative;
+}
+nav .form .fa-magnifying-glass {
+  color: var(--main-color-text);
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*End Header*/
+
+/*Start Landing*/
+
+/* .landing .carousel-inner {
+  height: 100vh;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--main-color-text);
+}
+.carousel-indicators .active {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+} */
+
+/*End Landing*/
