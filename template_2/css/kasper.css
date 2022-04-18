@@ -159,7 +159,7 @@ nav .form .fa-magnifying-glass {
 .landing {
   min-height: 100vh;
   background-color: #1f2022;
-  background-image: url(../images/landing.jpg);
+  /* background-image: url(../images/landing.jpg); */
   background-size: cover;
   position: relative;
 }
@@ -197,10 +197,7 @@ font-size: 14px;
 line-height: 2;
 }
 
-
-
-
-/* .landing .carousel-inner {
+.landing .carousel-inner {
   height: 100vh;
 }
 .carousel-indicators [data-bs-target] {
@@ -213,6 +210,6 @@ line-height: 2;
 .carousel-indicators .active {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
-} */
+}
 
 /*End Landing*/
