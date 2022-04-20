@@ -508,5 +508,20 @@ text-transform: uppercase;
 /*End Video Section*/
 
 /*Start About Section*/
-
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden;
+  text-align: center;
+}
+.about img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+ .about img {
+  bottom: -80px;
+} 
+}
 /*End About Section*/
