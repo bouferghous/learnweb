@@ -2,9 +2,9 @@
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
-  --main-color-text: #fefcfbcb;
+  --main-color-text: #fff;
   --color-paragraph: #777;
-  --color-h-components: #575757;
+  --color-h-components: #353235;
   --section-padding: 100px;
 }
 /*End Variables*/
@@ -203,19 +203,8 @@ nav .form .fa-magnifying-glass {
 .landing {
   min-height: 100vh;
   background-color: #1f2022;
-  /* background-image: url(../images/landing.jpg); */
-  background-size: cover;
   position: relative;
 }
-/* .landing .overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #00000080;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-} */
 .landing .text {
   background-color: var(--transparent-color);
   color: var(--main-color-text);
@@ -525,3 +514,75 @@ text-transform: uppercase;
 } 
 }
 /*End About Section*/
+
+
+/*Start Stats*/
+.stats {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  background-image: url(../images/stats.jpg);
+  background-size: cover;
+  margin-bottom: 100px;
+  position: relative;
+}
+.stats::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #02056940;
+}
+.stats .container {
+position: relative;
+display: flex;
+flex-wrap: wrap;
+}
+.stats .container .box {
+  color: var(--main-color-text);
+  padding: 50px;
+  background-color: var(--transparent-color);
+}
+@media (max-width: 767px) {
+  .stats .container .box {
+    flex-basis: 100%;
+    padding: 10px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .stats .container .box {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .stats .container .box {
+    flex-basis: 25%;
+  }
+}
+.stats .container .box .icon-box {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  background-color: var(--color-h-components);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  position: relative;
+}
+.stats .container .box .stats-icon {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.stats .container .box .number {
+font-size: 40px;
+font-weight: bold;
+margin: 0 0 10px;
+}
+.stats .container .box p {
+font-size: 13px;
+}
+
+/*End Stats*/
