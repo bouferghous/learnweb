@@ -480,19 +480,19 @@ nav .form .fa-magnifying-glass {
   padding: 50px;
 }
 .video .text h2 {
-margin: 0 0 30px;
-text-transform: uppercase;
-font-weight: normal;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 .video .text p {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .video .text button {
-background-color: var(--color-h-components);
-color: var(--main-color-text);
-padding: 10px 20px;
-border: none;
-text-transform: uppercase;
+  background-color: var(--color-h-components);
+  color: var(--main-color-text);
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
 }
 /*End Video Section*/
 
@@ -509,12 +509,11 @@ text-transform: uppercase;
   max-width: 100%;
 }
 @media (max-width: 767px) {
- .about img {
-  bottom: -80px;
-} 
+  .about img {
+    bottom: -80px;
+  }
 }
 /*End About Section*/
-
 
 /*Start Stats*/
 .stats {
@@ -526,7 +525,7 @@ text-transform: uppercase;
   margin-bottom: 100px;
   position: relative;
 }
-.stats::before{
+.stats::before {
   content: "";
   position: absolute;
   top: 0;
@@ -536,9 +535,9 @@ text-transform: uppercase;
   background-color: #02056940;
 }
 .stats .container {
-position: relative;
-display: flex;
-flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 .stats .container .box {
   color: var(--main-color-text);
@@ -566,7 +565,16 @@ flex-wrap: wrap;
   height: 50px;
   margin: 0 auto 20px;
   background-color: var(--color-h-components);
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
   position: relative;
 }
 .stats .container .box .stats-icon {
@@ -577,12 +585,12 @@ flex-wrap: wrap;
   transform: translate(-50%, -50%);
 }
 .stats .container .box .number {
-font-size: 40px;
-font-weight: bold;
-margin: 0 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 10px;
 }
 .stats .container .box p {
-font-size: 13px;
+  font-size: 13px;
 }
 /*End Stats*/
 
@@ -597,27 +605,27 @@ font-size: 13px;
   flex-wrap: wrap;
 }
 @media (min-width: 992px) {
-.our-skills .container > div {
-  flex-basis: 45%;
-}
+  .our-skills .container > div {
+    flex-basis: 45%;
+  }
 }
 .our-skills .container > div > h3 {
-text-align: center;
-font-weight: normal;
-margin: 0 0 30px;
-text-transform: uppercase;
-color: var(--color-h-components);
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  color: var(--color-h-components);
 }
 .our-skills .container > div > p {
-color: var(--color-paragraph);
-text-align: center;
-margin-bottom: 60px;
-line-height: 2;
+  color: var(--color-paragraph);
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 2;
 }
 .our-skills .testimonials .content {
-display: flex;
-margin-bottom: 30px;
-/* align-items: center; */
+  display: flex;
+  margin-bottom: 30px;
+  /* align-items: center; */
 }
 .our-skills .testimonials .content img {
   width: 100px;
@@ -627,12 +635,12 @@ margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .our-skills .testimonials .content {
-flex-direction: column;
-text-align: center;
-}
-.our-skills .testimonials .content img {
-  margin: 0 auto 20px;
-}
+    flex-direction: column;
+    text-align: center;
+  }
+  .our-skills .testimonials .content img {
+    margin: 0 auto 20px;
+  }
 }
 .our-skills .testimonials .text {
   line-height: 1.8;
@@ -650,7 +658,7 @@ text-align: center;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
-} 
+}
 .our-skills .testimonials .bullets li {
   width: 12px;
   height: 12px;
@@ -663,4 +671,45 @@ text-align: center;
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
 }
+.our-skills .skills .prog-holder {
+  margin-bottom: 28px;
+}
+.our-skills .skills .prog-holder h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.our-skills .skills .prog-holder .prog {
+  background-color: var(--color-paragraph);
+  height: 30px;
+}
+.our-skills .skills .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.our-skills .skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: #000;
+  color: var(--main-color-text);
+  top: -30px;
+    right: -16px;
+  padding: 2px 0;
+  width: 35px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.our-skills .skills .prog-holder .prog span::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  border: 6px solid;
+  border-color: #000 transparent transparent ;
+}
+
 /*End Skills(compétences) Section*/
