@@ -696,7 +696,7 @@ nav .form .fa-magnifying-glass {
   background-color: #000;
   color: var(--main-color-text);
   top: -30px;
-    right: -16px;
+  right: -16px;
   padding: 2px 0;
   width: 35px;
   text-align: center;
@@ -704,12 +704,43 @@ nav .form .fa-magnifying-glass {
   font-size: 12px;
 }
 .our-skills .skills .prog-holder .prog span::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -5px;
   top: -10px;
   border: 6px solid;
-  border-color: #000 transparent transparent ;
+  border-color: #000 transparent transparent;
 }
-
 /*End Skills(compétences) Section*/
+
+/*Start Quote Section*/
+.quote {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../images/quote0x.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  background-repeat: no-repeat;
+  color: var(--main-color-text);
+}
+.quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000075;
+}
+.quote .container {
+  position: relative;
+
+}
+.quote .container q {
+  /* You can change quotes with font awesomme in before and after */
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+/*End Quote Section*/
