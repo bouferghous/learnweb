@@ -735,7 +735,6 @@ nav .form .fa-magnifying-glass {
 }
 .quote .container {
   position: relative;
-
 }
 .quote .container q {
   /* You can change quotes with font awesomme in before and after */
@@ -756,24 +755,24 @@ nav .form .fa-magnifying-glass {
   gap: 30px;
 }
 .pricing .plans .plan {
-text-align: center;
+  text-align: center;
 }
 .pricing .plans .plan .head {
-padding: 40px 20px;
-border-top: 1px solid var(--main-color);
-border-bottom: 1px solid var(--main-color);
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 .pricing .plans .plan .head h3 {
-text-transform: uppercase;
-margin-bottom: 20px;
-font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
-.pricing .plans .plan .head span{
+.pricing .plans .plan .head span {
   font-size: 60px;
   font-weight: 600;
 }
 .pricing .plans .plan .head span::before {
-  content: '$';
+  content: "$";
   position: relative;
   top: -30px;
   font-size: 25px;
@@ -781,7 +780,7 @@ font-size: 20px;
   font-weight: bold;
 }
 .pricing .plans .plan .head span::after {
-  content: '/Mo';
+  content: "/Mo";
   position: relative;
   right: -15px;
   font-size: 16px;
@@ -789,7 +788,7 @@ font-size: 20px;
   text-transform: uppercase;
 }
 .pricing .plans .plan ul {
-border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 .pricing .plans .plan ul li {
   padding: 20px;
@@ -803,7 +802,7 @@ border-bottom: 1px solid var(--main-color);
   position: absolute;
   left: 50%;
   bottom: 0;
-transform: translate(-50%);
+  transform: translate(-50%);
 }
 .pricing .plans .plan .foot a {
   display: block;
@@ -815,10 +814,10 @@ transform: translate(-50%);
   color: var(--color-h-components);
 }
 .pricing .contact-text {
-color: var(--color-h-components);
-font-size: 20px;
-text-align: center;
-margin: 60px 0 30px;
+  color: var(--color-h-components);
+  font-size: 20px;
+  text-align: center;
+  margin: 60px 0 30px;
 }
 .pricing .contact-link {
   background-color: var(--main-color);
@@ -837,17 +836,17 @@ margin: 60px 0 30px;
   padding-bottom: var(--section-padding);
   background-image: url(../images/subscribe.jpg);
   background-size: cover;
-  color: var(--main-color-text  );
+  color: var(--main-color-text);
   position: relative;
 }
 .subscribe::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.50);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .subscribe .container {
   position: relative;
@@ -860,10 +859,10 @@ background-color: rgba(0, 0, 0, 0.50);
   }
 }
 .subscribe form {
-display: flex;
-position: relative;
-width: 500px;
-max-width: 100%;
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
 }
 .subscribe form .envelope {
   position: absolute;
@@ -871,7 +870,7 @@ max-width: 100%;
   transform: translateY(-50%);
   left: 25px;
 }
-.subscribe form input[type="email"]{
+.subscribe form input[type="email"] {
   border: 1px solid var(--main-color-text);
   border-right: none;
   background: none;
@@ -879,7 +878,7 @@ max-width: 100%;
   caret-color: var(--main-color);
   width: calc(100% - 130px);
 }
-.subscribe form input[type="submit"]{
+.subscribe form input[type="submit"] {
   width: 130px;
   background-color: var(--main-color);
   color: var(--main-color-text);
@@ -897,13 +896,13 @@ max-width: 100%;
   text-transform: uppercase;
 }
 .subscribe p {
-line-height: 2;
-margin-left: 50px;
+  line-height: 2;
+  margin-left: 50px;
 }
 @media (max-width: 991px) {
   .subscribe p {
-margin: 30px 0 0;
-}
+    margin: 30px 0 0;
+  }
 }
 /*End Subscribe Section*/
 
@@ -919,7 +918,7 @@ margin: 30px 0 0;
 @media (max-width: 767px) {
   .contact .content {
     flex-direction: column;
-}
+  }
 }
 .contact .content form {
   flex-basis: 70%;
@@ -958,7 +957,7 @@ margin: 30px 0 0;
   .contact .content .info {
     order: -1;
     text-align: center;
-}
+  }
 }
 .contact .content .info h4 {
   text-transform: uppercase;
@@ -978,17 +977,61 @@ margin: 30px 0 0;
 @media (max-width: 767px) {
   .contact .content .info h4:nth-of-type(2) {
     margin-top: 30px;
-}
+  }
 }
 .contact .content .info address {
-color: var(--color-paragraph);
-line-height: 2;
-font-style: italic;
-letter-spacing: 1px;
+  color: var(--color-paragraph);
+  line-height: 2;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 @media (max-width: 767px) {
   .contact .content .info address {
     margin-bottom: 40px;
-}
+  }
 }
 /*End Contact Section*/
+
+/*Start Footer*/
+.footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  background-image: url(../images/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+  color: var(--main-color-text);
+  text-align: center;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.footer .container {
+  position: relative;
+}
+.footer img {
+  margin-bottom: 20px;
+}
+.footer p:not(.copyright) {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid var(--main-color-text);
+  width: fit-content;
+  margin: 20px auto;
+  font-size: 22px;
+}
+.footer .social-icons .s-icon {
+  padding: 10px 15px;
+}
+.footer .copyright {
+  margin-top: 60px;
+}
+.footer .copyright span {
+  color: var(--main-color);
+}
+/*End Footer*/
