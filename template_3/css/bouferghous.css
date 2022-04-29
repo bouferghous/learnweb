@@ -1,47 +1,87 @@
 /*Start Global Rules*/
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  } */
-  html {
-    scroll-behavior: smooth;
-  }
-  :root {
-      --main-color: #2196f3;
-      --main-color-alt: #1787e0;
-  }
-  body {
-    font-family: 'Cairo', sans-serif;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition-duration: 0.3s;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Small 768 and + */
+@media (min-width: 768px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 750px;
   }
-  
-  /*Small 768 and + */
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
+}
+/*Medium 992 and + */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
-  /*Medium 992 and + */
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+}
+/*Large 1200 and + */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
-  /*Large 1200 and + */
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-  }
-  /*End Global Rules*/
+}
+/*End Global Rules*/
+
+/*Start Header Section*/
+.header {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.header .logo {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .main-nav {
+  display: flex; 
+}
+.header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
+  position: relative;
+  color: #000;
+  padding: 30px;
+  transition: var(--main-transition-duration);
+}
+/*End Header Section*/
