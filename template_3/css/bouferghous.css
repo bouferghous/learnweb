@@ -79,6 +79,7 @@ ul {
 }
 .header .main-nav {
   display: flex;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   .header .main-nav {
@@ -120,6 +121,45 @@ ul {
 .header .main-nav > li > a:hover::before {
   left: 0;
 }
+.header .mega-menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 30px;
+  background-color: #fff;
+  border-bottom: 3px solid var(--main-color);
+  z-index: 100;
+  display: flex;
+  gap: 40px;
+  top: calc(100% + 50px);
+  transition: top var(--main-transition-duration), opacity var(--main-transition-duration);
+}
+.header .mega-menu .image img {
+  max-width: 100%;
+}
+.header .mega-menu .links {
+  
+}
+.header .mega-menu .links li {
+  
+}
+.header .mega-menu .links li::before {
+  content: "";
+}
+.header .mega-menu .links li:hover::before {
+  
+}
+.header .mega-menu .links li a {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.header .mega-menu .links li a .mega-m-icon {
+  margin-right: 15px;
+}
+
 /*End Header Section*/
 
 /* Start Landing */
